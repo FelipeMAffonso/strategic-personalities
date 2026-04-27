@@ -1,0 +1,66 @@
+{
+  "tfidf_baseline": {
+    "embedding_model": "TF-IDF (5000 features) + TruncatedSVD (384 dim)",
+    "overall_silhouette": 0.0011,
+    "provider_separation_ratio": 1.3348,
+    "anthropic_mean_silhouette": 0.48163333333333336,
+    "openai_mean_silhouette": -0.30960000000000004
+  },
+  "sentence_transformer_robustness": {
+    "n_traces_subsampled": 41520,
+    "n_agents": 34,
+    "embedding_dim": 384,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "overall_silhouette": -0.006103956140577793,
+    "mean_within_provider_distance": 0.11895938962697983,
+    "mean_between_provider_distance": 0.1269540786743164,
+    "provider_separation_ratio": 1.0672051906585693,
+    "provider_separation_ratio_without_anthropic": 0.8419249057769775,
+    "per_model_silhouette": {
+      "always_football": 0.23104073107242584,
+      "always_signal": 0.6423612833023071,
+      "anti_mirror": 0.6428758502006531,
+      "bayesian_receiver": 0.6423613429069519,
+      "claude-haiku-4.5": 0.24102114140987396,
+      "claude-haiku-4.5-thinking": 0.11125829070806503,
+      "claude-opus-4.5": 0.5219473838806152,
+      "claude-opus-4.6": 0.47343963384628296,
+      "claude-sonnet-4.5": 0.4401945173740387,
+      "claude-sonnet-4.6": -0.014591478742659092,
+      "deepseek-r1": 0.27052000164985657,
+      "deepseek-v3": -0.5758092403411865,
+      "gemini-2.0-flash": -0.5760406851768494,
+      "gemini-2.5-flash": -0.33999598026275635,
+      "gemini-2.5-flash-thinking": -0.417161226272583,
+      "gemini-3-flash": -0.5033062100410461,
+      "gemini-3-pro": -0.4371136724948883,
+      "gemini-3.1-pro": -0.20479533076286316,
+      "gpt-4.1": -0.8299251198768616,
+      "gpt-4.1-mini": -0.7373074889183044,
+      "gpt-4.1-nano": -0.7853876948356628,
+      "gpt-4o-mini": -0.7481364011764526,
+      "gpt-5-mini": -0.02074991911649704,
+      "gpt-5-nano": 0.019070003181695938,
+      "gpt-5.3": -0.4789179861545563,
+      "gpt-5.4": -0.04270733892917633,
+      "llama-3.3-70b": 0.0,
+      "ministral-14b": 0.0,
+      "mirror": 0.4562135934829712,
+      "never_signal": 0.5501760244369507,
+      "qwen3.5-flash": 0.0,
+      "random_strategy": 0.6534168124198914,
+      "reverse_tit_for_tat": 0.40381306409835815,
+      "trust_proportional": 0.2047015279531479
+    },
+    "anthropic_mean_silhouette": 0.2955449147460361,
+    "anthropic_silhouette_range": [
+      -0.014591478742659092,
+      0.5219473838806152
+    ],
+    "openai_mean_silhouette": -0.4530077432282269,
+    "openai_silhouette_range": [
+      -0.8299251198768616,
+      0.019070003181695938
+    ]
+  }
+}
